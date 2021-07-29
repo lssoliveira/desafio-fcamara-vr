@@ -1,0 +1,15 @@
+<% def timestamps
+  date = Time.now.strftime('%d%m%Y').to_s
+  time = Time.now.strftime('%H-%M-%S').to_s
+  "#{date}_#{time}"
+end %>
+
+<% RUN_TSTAMPs = timestamps.freeze %>
+
+# Template
+default: -p html_report -p json_report
+
+# Reports
+html_report: --format pretty --format html --out=reports/report_<%= RUN_TSTAMPs %>.html
+json_report: --format pretty --format json --out=reports/report_<%= RUN_TSTAMPs %>.json
+allure: --format AllureCucumber::Formatter --out=test_report

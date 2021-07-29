@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+source 'http://rubygems.org'
+
+gem 'allure-cucumber'
+gem 'brazilian_documents'
+gem 'cpf_faker'
+gem 'cucumber'
+gem 'faker'
+gem 'httparty'
+gem 'json-schema'
+gem 'jsonpath'
+gem 'parallel_tests'
+gem 'pry'
+gem 'report_builder'
+gem 'rspec'

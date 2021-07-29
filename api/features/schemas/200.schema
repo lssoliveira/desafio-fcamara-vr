@@ -1,0 +1,169 @@
+{
+    "type": "object",
+    "required": [
+        "products",
+        "operatingDays",
+        "typeOfEstablishment",
+        "videos",
+        "dominios"
+    ],
+    "properties": {
+        "products": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "nome",
+                    "exibirRede",
+                    "adquirirCartao",
+                    "percentualCartao",
+                    "produtoAlimentacao",
+                    "produtoRefeicao"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "nome": {
+                        "type": "string"
+                    },
+                    "exibirRede": {
+                        "type": "boolean"
+                    },
+                    "adquirirCartao": {
+                        "type": "boolean"
+                    },
+                    "percentualCartao": {
+                        "type": "integer"
+                    },
+                    "produtoAlimentacao": {
+                        "type": "boolean"
+                    },
+                    "produtoRefeicao": {
+                        "type": "boolean"
+                    }
+                }
+            }
+        },
+        "operatingDays": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "key",
+                    "name",
+                    "label"
+                ],
+                "properties": {
+                    "key": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "typeOfEstablishment": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "key",
+                    "name",
+                    "label"
+                ],
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "videos": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "key",
+                    "name",
+                    "label"
+                ],
+                "properties": {
+                    "key": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "dominios": {
+            "type": "object",
+            "required": [
+                "TIPO_LOGRADOURO",
+                "SEXO"
+            ],
+            "properties": {
+                "TIPO_LOGRADOURO": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "key",
+                            "name",
+                            "label"
+                        ],
+                        "properties": {
+                            "key": {
+                                "type": "integer"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "label": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "SEXO": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "key",
+                            "name",
+                            "label"
+                        ],
+                        "properties": {
+                            "key": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "label": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
